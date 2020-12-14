@@ -13,7 +13,7 @@ Open up your favorite browser, go to localhost:3000 and try clicking around.
 
 Or you can play with the code, just check `src/routes/index.svelte` and try to edit the CSS.
 
-For more information about this boilerplate, check my dev.to post [here]().
+For more information about this boilerplate, check my dev.to post [here](https://dev.to/dansvel/sveltekit-svelte-next-with-tailwind-2-4dnn).
 
 # Credits
 
