@@ -4,17 +4,13 @@
   import Timer from '$components/Timer.svelte'
   import {onMount} from 'svelte';
 
-  onMount(async() => {
-    if (typeof(document) !== 'undefined') {
-      $: {
-        if ($preferences.theme !== 'dark') {
-          document.querySelector('html').classList.remove('dark')
-        } else {
-          document.querySelector('html').classList.add('dark')
-        }
-      }
+  $: {
+    if ($preferences.theme !== 'dark') {
+      document.querySelector('html').classList.remove('dark')
+    } else {
+      document.querySelector('html').classList.add('dark')
     }
-  })
+  }
 </script>
 
 <div>
