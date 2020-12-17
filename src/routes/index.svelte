@@ -2,23 +2,21 @@
   import { preferences } from './store'
   import Counter from '$components/Counter.svelte'
   import Timer from '$components/Timer.svelte'
-  import {onMount} from 'svelte';
 
-  // onMount(() => {
-      $: {
-        if ($preferences.theme === 'dark') {
-          document.querySelector('html').classList.add('dark')
-        } else {
-          document.querySelector('html').classList.remove('dark')
-        }
-      }
-  // })
+  const toggleTheme = () => {
+    $preferences.theme = $preferences.theme === 'dark' ? 'light' : 'dark'
+    if ($preferences.theme === 'dark') {
+      document.querySelector('html').classList.add('dark')
+    } else {
+      document.querySelector('html').classList.remove('dark')
+    }
+  }
 </script>
 
 <div>
   <h1 class="text-5xl font-extrabold">Hello {$preferences.theme} world!</h1>
 
-  <button on:click={() => $preferences.theme = $preferences.theme === 'dark' ? 'light' : 'dark'}>
+  <button on:click={toggleTheme}>
     Toggle Theme
   </button>
 
