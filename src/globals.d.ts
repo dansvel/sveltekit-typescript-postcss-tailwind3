@@ -12,12 +12,6 @@ declare module '*.svelte' {
 }
 //#endregion
 
-//#region Ensure css file endings have a type for TypeScript
-// declare module '*.css' {
-//     const value: string;
-//     export = value;
-// }
-//#endregion
 //#region Ensure image file endings have a type for TypeScript
 /**
  * These declarations tell TypeScript that we allow import of images, e.g.
