@@ -5,9 +5,10 @@ module.exports = {
     preprocess: [
 		sveltePreprocess({
 			defaults: {
-                script: 'typescript',
+                                script: 'typescript',
 				style: "postcss",
 			},
+                        postcss: true
 		}),
 	],
 	kit: {
