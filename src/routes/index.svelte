@@ -10,22 +10,20 @@
       document.querySelector('html').classList.add('dark')
     }
   })
-  $: {
-    if (typeof document != 'undefined') {
-      if ($preferences.theme === 'dark') {
-        document.querySelector('html').classList.add('dark')
-      } else {
-        document.querySelector('html').classList.remove('dark')
-      }
-    }
-  }
+
+  // you can replace this function to navbar or else
+  const toggleTheme = (e) => {
+    $preferences.theme = $preferences.theme === 'dark' ? 'light' : 'dark';
+
+    document.querySelector('html').classList.toggle('dark');
+  };
 </script>
 
 <div>
   <article>
     <h1 class="text-5xl font-extrabold mb-4">Hello {$preferences.theme} world!</h1>
 
-    <button on:click={()=> $preferences.theme = $preferences.theme === 'dark' ? 'light' : 'dark' }>
+    <button on:click={toggleTheme}>
       Toggle Theme
     </button>
 
