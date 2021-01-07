@@ -1,9 +1,9 @@
 <script>
   import { preferences } from './store'
 
-  import Counter from "../components/Counter.svelte";
-  import Timer from "../components/Timer.svelte";
-  import {onMount, tick} from "svelte";
+  import Counter from '../components/Counter.svelte';
+  import Timer from '../components/Timer.svelte';
+  import {onMount, tick} from 'svelte';
 
   onMount(() => {
     if ($preferences.theme === 'dark') {
@@ -21,13 +21,13 @@
 
 <div>
   <article>
-    <h1 class="text-5xl font-extrabold mb-4">Hello {$preferences.theme} world!</h1>
+    <h1 class='text-5xl font-extrabold mb-4'>Hello {$preferences.theme} world!</h1>
 
     <button on:click={toggleTheme}>
       Toggle Theme
     </button>
 
-    <p>Visit the <a href="https://svelte.dev">svelte.dev</a> to learn how to build Svelte apps.</p>
+    <p>Visit the <a href='https://svelte.dev'>svelte.dev</a> to learn how to build Svelte apps.</p>
     <p>The title is using utility class, but all other elements is using style component.</p>
     <p>Just check <code>src/routes/index.svelte</code> to see the code.</p>
   </article>
@@ -36,7 +36,7 @@
   <Timer/>
 </div>
 
-<style lang="postcss">
+<style lang='postcss'>
   div {
     @apply text-center;
   }

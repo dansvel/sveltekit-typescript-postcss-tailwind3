@@ -5,8 +5,8 @@ module.exports = {
     preprocess: [
         sveltePreprocess({
             defaults: {
-                script: 'typescript',
-                style: "postcss",
+                script: 'ts',
+                style: 'postcss',
             },
             postcss: true
         }),
