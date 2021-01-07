@@ -1,8 +1,8 @@
 <script>
-	import "./global.pcss";
+  import GlobalStyle from './GlobalStyle.svelte';
 </script>
 
+<GlobalStyle/>
 <main>
   <slot />
 </main>
-
