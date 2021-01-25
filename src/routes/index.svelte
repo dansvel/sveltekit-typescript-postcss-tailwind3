@@ -11,7 +11,7 @@
     }
   })
 
-  // you can replace this function to navbar or else
+  // you can move this function to navbar or else
   const toggleTheme = (e) => {
     $preferences.theme = $preferences.theme === 'dark' ? 'light' : 'dark';
 
