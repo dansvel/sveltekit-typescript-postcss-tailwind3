@@ -5,14 +5,14 @@ module.exports = {
         [
             '@snowpack/plugin-build-script',
             {
-                cmd: "postcss",
-                input: [".css", ".pcss"],
-                output: [".css"],
+                cmd: 'postcss',
+                input: ['.css', '.pcss'],
+                output: ['.css'],
             }
         ],
 
         [
-            "@snowpack/plugin-svelte",
+            '@snowpack/plugin-svelte',
             {
                 compilerOptions: {
                     hydratable: true

@@ -3,7 +3,7 @@
 
   import Counter from '../components/Counter.svelte';
   import Timer from '../components/Timer.svelte';
-  import {onMount, tick} from 'svelte';
+  import {onMount} from 'svelte';
 
   onMount(() => {
     if ($preferences.theme === 'dark') {
