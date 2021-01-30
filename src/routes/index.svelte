@@ -1,19 +1,19 @@
 <script>
-  import { preferences } from './store'
+  import { theme } from './store'
 
   import Counter from '../components/Counter.svelte';
   import Timer from '../components/Timer.svelte';
   import {onMount} from 'svelte';
 
   onMount(() => {
-    if ($preferences.theme === 'dark') {
+    if ($theme === 'dark') {
       document.querySelector('html').classList.add('dark')
     }
   })
 
   // you can move this function to navbar or else
   const toggleTheme = (e) => {
-    $preferences.theme = $preferences.theme === 'dark' ? 'light' : 'dark';
+    $theme = $theme === 'dark' ? 'light' : 'dark';
 
     document.querySelector('html').classList.toggle('dark');
   };
@@ -21,7 +21,7 @@
 
 <div>
   <article>
-    <h1 class='text-5xl font-extrabold mb-4'>Hello {$preferences.theme} world!</h1>
+    <h1 class='text-5xl font-extrabold mb-4'>Hello {$theme} world!</h1>
 
     <button on:click={toggleTheme}>
       Toggle Theme
