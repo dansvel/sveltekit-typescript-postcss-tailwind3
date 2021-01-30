@@ -3,14 +3,14 @@
 	"version": "0.0.1",
 	"scripts": {
 		"dev": "svelte-kit dev",
-		"build": "svelte-kit build",
+		"build": "svelte-kit build && svelte-kit adapt",
 		"start": "svelte-kit start"
 	},
 	"devDependencies": {
 		"@snowpack/plugin-build-script": "^2.0.11",
 		"@snowpack/plugin-svelte": "^3.4.0",
 		"@snowpack/plugin-typescript": "^1.0.0",
-		"@sveltejs/adapter-node": "next",
+		"@sveltejs/adapter-static": "next",
 		"@sveltejs/kit": "next",
 		"@sveltejs/snowpack-config": "next",
 		"autoprefixer": "^10.1.0",
