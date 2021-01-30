@@ -1,4 +1,4 @@
 [build]
 #base = "project/"
 publish = "build/"
-command = "npm run build && npx svelte-kit adapt"
+command = "npm run build"
