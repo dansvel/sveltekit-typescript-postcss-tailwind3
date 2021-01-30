@@ -27,13 +27,18 @@
       Toggle Theme
     </button>
 
-    <p>Visit the <a href='https://svelte.dev'>svelte.dev</a> to learn how to build Svelte apps.</p>
+    <h3 class="text-2xl py-2">For more information, check <a href="https://github.com/dansvel/sveltekit-typescript-postcss-tailwind2"><b>Github repo</b></a>
+      or <a href="https://dev.to/dansvel/sveltekit-svelte-next-with-tailwind-2-4dnn"><b>dev.to post</b></a></h3>
     <p>The title is using utility class, but all other elements is using style component.</p>
     <p>Just check <code>src/routes/index.svelte</code> to see the code.</p>
+
+    <p></p>
   </article>
 
   <Counter/>
   <Timer/>
+
+
 </div>
 
 <style lang='postcss'>
