@@ -1,5 +1,7 @@
 ![Sveltekit with Tailwind](https://dev-to-uploads.s3.amazonaws.com/i/jvi8p68ke4kkiv715iby.png)
 
+Go to [**Live Demo**](https://sveltekit-tailwind2.netlify.app/)
+
 # Running the project
 
 Clone this repo and cd to the directory, then run npm or yarn
