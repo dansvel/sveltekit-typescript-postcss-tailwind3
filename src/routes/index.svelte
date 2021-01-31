@@ -17,14 +17,14 @@
   <meta property="og:url" content="https://metatags.io/">
   <meta property="og:title" content="SvelteKit ❤️ Tailwind 2">
   <meta property="og:description" content="SvelteKit and Tailwind 2 toggle dark/light theme demo">
-  <meta property="og:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
+  <meta property="og:image" content="https://dev-to-uploads.s3.amazonaws.com/i/iuio86fml3rw8pb8uuws.png">
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
   <meta property="twitter:url" content="https://metatags.io/">
   <meta property="twitter:title" content="SvelteKit ❤️ Tailwind 2">
   <meta property="twitter:description" content="SvelteKit and Tailwind 2 toggle dark/light theme demo">
-  <meta property="twitter:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
+  <meta property="twitter:image" content="https://dev-to-uploads.s3.amazonaws.com/i/iuio86fml3rw8pb8uuws.png">
 </svelte:head>
 
 <div>
