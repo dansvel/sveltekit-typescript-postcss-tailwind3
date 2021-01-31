@@ -9,7 +9,7 @@
 
   const count = () => {
     timer++;
-    setTimeout(count, 100);
+    setTimeout(count, 1000);
   };
 
   const pad = (val) => (val > 9 ? val : '0' + val);
