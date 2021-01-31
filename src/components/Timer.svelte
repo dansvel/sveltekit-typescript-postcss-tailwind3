@@ -19,10 +19,10 @@
   }
 </script>
 
-<pre>You open this page for : {minutes} minutes {seconds} seconds.</pre>
+<p>You open this page for: {minutes} minutes {seconds} seconds.</p>
 
 <style>
-  pre {
-    @apply text-lg;
+  p {
+    @apply font-mono;
   }
 </style>
