@@ -1,14 +1,14 @@
 const mode = process.env.NODE_ENV;
-const dev = mode === "development";
+const dev = mode === 'development';
 
 module.exports = {
-	plugins: [
+    plugins: [
         require('postcss-preset-env')({stage: 1}),
-        require("tailwindcss"),
-        require("autoprefixer"),
+        require('tailwindcss'),
+        require('autoprefixer'),
 
-		!dev && require("cssnano")({
-			preset: "default",
-		}),
-	],
+        !dev && require('cssnano')({
+            preset: 'default',
+        }),
+    ],
 };

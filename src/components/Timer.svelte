@@ -1,14 +1,28 @@
-<script lang="ts">
-  let seconds, minutes, timer :number = 0
+<script>
+  import { onMount } from 'svelte';
 
-  setInterval(() => {
+  let timer = 0;
+  let seconds;
+  let minutes;
+
+  onMount(() => count());
+
+  const count = () => {
     timer++;
-  }, 1000);
+    setTimeout(count, 100);
+  };
 
+  const pad = (val) => (val > 9 ? val : '0' + val);
   $: {
-    minutes = Math.floor(timer / 60)
-    seconds = Math.floor(timer - minutes * 60)
+    seconds = pad(timer % 60);
+    minutes = pad(Math.floor(timer / 60));
   }
 </script>
 
-<p>You open this page for : {minutes} minute{minutes >= 1 ? 's' : ''} and {seconds} seconds.</p>
+<pre>You open this page for : {minutes} minutes {seconds} seconds.</pre>
+
+<style>
+  pre {
+    @apply text-lg;
+  }
+</style>

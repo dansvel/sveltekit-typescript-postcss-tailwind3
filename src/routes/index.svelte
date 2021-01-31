@@ -1,54 +1,34 @@
 <script>
-  import { theme } from './store'
-
+  import { theme } from './store';
+  import ToggleTheme from '../components/ToggleTheme.svelte';
   import Counter from '../components/Counter.svelte';
   import Timer from '../components/Timer.svelte';
-  import {onMount} from 'svelte';
-
-  onMount(() => {
-    if ($theme === 'dark') {
-      document.querySelector('html').classList.add('dark')
-    }
-  })
-
-  // you can move this function to navbar or else
-  const toggleTheme = (e) => {
-    $theme = $theme === 'dark' ? 'light' : 'dark';
-
-    document.querySelector('html').classList.toggle('dark');
-  };
 </script>
 
 <div>
-  <article>
-    <h1 class='text-5xl font-extrabold mb-4'>Hello {$theme} world!</h1>
+  <h1 class="text-5xl font-extrabold mb-4">Hello {$theme} world!</h1>
 
-    <button on:click={toggleTheme}>
-      Toggle Theme
-    </button>
+  <ToggleTheme />
 
-    <h3 class="text-2xl py-2">For more information, check <a href="https://github.com/dansvel/sveltekit-typescript-postcss-tailwind2"><b>Github repo</b></a>
-      or <a href="https://dev.to/dansvel/sveltekit-svelte-next-with-tailwind-2-4dnn"><b>dev.to post</b></a></h3>
-    <p>The title is using utility class, but all other elements is using style component.</p>
-    <p>Just check <code>src/routes/index.svelte</code> to see the code.</p>
+  <blockquote class="text-xl p-2 bg-gray-200 dark:bg-gray-800 mb-2">
+    For more information, check <a href="https://github.com/dansvel/sveltekit-typescript-postcss-tailwind2"
+      ><b>Github repo</b></a>
+    or <a href="https://dev.to/dansvel/sveltekit-svelte-next-with-tailwind-2-4dnn"><b>dev.to post</b></a>
+  </blockquote>
+  <p>Visit the <a href="https://svelte.dev">svelte.dev</a> to learn how to build Svelte apps.</p>
+  <p>The title is using utility class, but all other elements is using style component.</p>
+  <p>Just check <code>src/routes/index.svelte</code> to see the code.</p>
 
-    <p></p>
-  </article>
-
-  <Counter/>
-  <Timer/>
-
-
+  <Counter />
+  <Timer />
 </div>
 
-<style lang='postcss'>
+<style>
   div {
     @apply text-center;
   }
   p {
-    @apply mt-0 mb-2;
-  }
-  a {
-    @apply text-indigo-600 hover:underline;
+    @apply text-lg;
+    @apply mt-0 mb-1;
   }
 </style>

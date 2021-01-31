@@ -1,7 +1,7 @@
 // Consult https://www.snowpack.dev to learn about these options
 module.exports = {
-    extends: '@sveltejs/snowpack-config',
-    plugins: [
+	extends: '@sveltejs/snowpack-config',
+	plugins: [
         [
             '@snowpack/plugin-build-script',
             {
@@ -10,21 +10,12 @@ module.exports = {
                 output: ['.css'],
             }
         ],
-
-        [
-            '@snowpack/plugin-svelte',
-            {
-                compilerOptions: {
-                    hydratable: true
-                }
-            }
-        ],
-        '@snowpack/plugin-typescript'
+	    '@snowpack/plugin-typescript'
     ],
-    mount: {
-        'src/components': '/_components'
-    },
-    alias: {
-        $components: './src/components'
-    }
+	mount: {
+		'src/components': '/_components'
+	},
+	alias: {
+		$components: './src/components'
+	}
 };
