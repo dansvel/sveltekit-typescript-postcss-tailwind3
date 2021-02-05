@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import { theme } from '../routes/store';
 
   const toggleTheme = (e) => {

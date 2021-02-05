@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import { theme } from './store';
   import ToggleTheme from '../components/ToggleTheme.svelte';
   import Counter from '../components/Counter.svelte';
@@ -43,7 +43,7 @@
 <Counter />
 <Timer />
 
-<style>
+<style lang="postcss">
   p {
     @apply text-lg;
     @apply mt-0 mb-1;

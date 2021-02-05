@@ -9,7 +9,6 @@
 	},
 	"devDependencies": {
 		"@snowpack/plugin-build-script": "^2.1.0",
-		"@snowpack/plugin-postcss": "^1.1.0",
 		"@snowpack/plugin-typescript": "^1.0.0",
 		"@sveltejs/adapter-static": "next",
 		"@sveltejs/kit": "next",
@@ -22,10 +21,12 @@
 		"postcss-preset-env": "^6.7.0",
 		"prettier": "^2.2.1",
 		"prettier-plugin-svelte": "^2.1.1",
+		"rollup": "^2.38.5",
 		"svelte": "^3.29.0",
 		"svelte-preprocess": "^4.0.0",
 		"tailwindcss": "^2.0.2",
 		"tslib": "^2.0.0",
 		"typescript": "^4.0.0"
-	}
+	},
+	"type": "module"
 }

@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import { onMount } from 'svelte';
 
   let timer = 0;
@@ -21,7 +21,7 @@
 
 <p>You open this page for: {minutes} minutes {seconds} seconds.</p>
 
-<style>
+<style lang="postcss">
   p {
     @apply font-mono;
   }
