@@ -1,8 +1,8 @@
 <script lang="ts">
   import { theme } from './store';
-  import ToggleTheme from '../components/ToggleTheme.svelte';
-  import Counter from '../components/Counter.svelte';
-  import Timer from '../components/Timer.svelte';
+  import ToggleTheme from '$lib/ToggleTheme.svelte';
+  import Counter from '$lib/Counter.svelte';
+  import Timer from '$lib/Timer.svelte';
 </script>
 
 <svelte:head>
@@ -47,5 +47,9 @@
   p {
     @apply text-lg;
     @apply mt-0 mb-1;
+    & code {
+      @apply px-1;
+      @apply dark:bg-gray-800 bg-gray-200;
+    }
   }
 </style>

@@ -1,7 +1,7 @@
 <script lang="ts">
-  import './_global.pcss';
-  import { theme } from './store';
-  import { onMount } from 'svelte';
+  import {theme} from './store';
+  import {onMount} from 'svelte';
+  import GlobalStyle from '$lib/GlobalStyle.svelte';
 
   onMount(() => {
     if ($theme === 'dark') {
@@ -10,6 +10,7 @@
   });
 </script>
 
+<GlobalStyle/>
 <main>
   <slot />
 </main>

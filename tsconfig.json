@@ -1,10 +1,10 @@
 {
 	"compilerOptions": {
 		"moduleResolution": "node",
-		"target": "es2017",
+		"target": "es2018",
 		/**
 			svelte-preprocess cannot figure out whether you have a value or a type, so tell TypeScript
-			to enforce using `import type` instead of `import` for Types.
+			to enforce using \`import type\` instead of \`import\` for Types.
 			*/
 		"importsNotUsedAsValues": "error",
 		"isolatedModules": true,
@@ -17,10 +17,12 @@
 		"skipLibCheck": true,
 		"forceConsistentCasingInFileNames": true,
 		"baseUrl": ".",
+		"allowJs": true,
+		"checkJs": true,
 		"paths": {
-			"$components/*": ["./src/components/*"]
+			"$app/*": [".svelte/dev/runtime/app/*", ".svelte/build/runtime/app/*"],
+			"$lib/*": ["src/lib/*"]
 		}
 	},
-	"include": ["src/**/*"],
-	"exclude": ["node_modules/*", ".svelte"]
+	"include": ["src/**/*.js", "src/**/*.ts", "src/**/*.svelte"]
 }

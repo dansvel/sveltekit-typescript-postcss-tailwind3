@@ -1,10 +1,7 @@
 const postcssPresetEnv = require('postcss-preset-env');
-const tailwindCSS = require('tailwindcss');
+const tailwindCSS = require('@tailwindcss/jit');
+// ^ Just for now, will merge to tailwindcss. Check https://blog.tailwindcss.com/just-in-time-the-next-generation-of-tailwind-css
 const autoprefixer = require('autoprefixer');
-const cssNano = require('cssnano');
-
-const mode = process.env.NODE_ENV;
-const dev = mode === 'development';
 
 module.exports = {
     plugins: [
@@ -14,11 +11,9 @@ module.exports = {
                 'nesting-rules': true
             }
         }),
-        tailwindCSS('tailwind.config.cjs'),
-        autoprefixer,
 
-        !dev && cssNano({
-            preset: 'default',
-        }),
+        tailwindCSS(),
+        autoprefixer,
     ],
 };
+
