@@ -1,7 +1,7 @@
 <script lang="ts">
+  import './_global.postcss';
   import {theme} from './store';
   import {onMount} from 'svelte';
-  import GlobalStyle from '$lib/GlobalStyle.svelte';
 
   onMount(() => {
     if ($theme === 'dark') {
@@ -10,7 +10,6 @@
   });
 </script>
 
-<GlobalStyle/>
 <main>
   <slot />
 </main>
