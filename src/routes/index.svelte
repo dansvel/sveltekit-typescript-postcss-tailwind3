@@ -17,14 +17,14 @@
   <meta property="og:url" content="https://metatags.io/">
   <meta property="og:title" content="SvelteKit ❤️ Tailwind 2">
   <meta property="og:description" content="SvelteKit and Tailwind 2 toggle dark/light theme demo">
-  <meta property="og:image" content="https://dev-to-uploads.s3.amazonaws.com/i/yyqy860f5z4n4vk8euzz.png">
+  <meta property="og:image" content="https://github.com/dansvel/sveltekit-typescript-postcss-tailwind2/raw/master/screenshot.png">
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
   <meta property="twitter:url" content="https://metatags.io/">
   <meta property="twitter:title" content="SvelteKit ❤️ Tailwind 2">
   <meta property="twitter:description" content="SvelteKit and Tailwind 2 toggle dark/light theme demo">
-  <meta property="twitter:image" content="https://dev-to-uploads.s3.amazonaws.com/i/yyqy860f5z4n4vk8euzz.png">
+  <meta property="twitter:image" content="https://github.com/dansvel/sveltekit-typescript-postcss-tailwind2/raw/master/screenshot.png">
 </svelte:head>
 
 <h1 class="text-5xl font-extrabold mb-4">Hello {$theme} world!</h1>
