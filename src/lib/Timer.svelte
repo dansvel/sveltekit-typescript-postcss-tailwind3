@@ -1,21 +1,24 @@
 <script lang="ts">
-  import { onMount } from 'svelte';
+  import { onMount } from 'svelte'
 
-  let timer = 0;
-  let seconds;
-  let minutes;
+  let timer = 0
+  let seconds: string
+  let minutes: string
 
-  onMount(() => count());
+  onMount(() => count())
 
   const count = () => {
-    timer++;
-    setTimeout(count, 1000);
-  };
+    timer++
+    setTimeout(count, 1000)
+  }
 
-  const pad = (val) => (val > 9 ? val : '0' + val);
+  const pad = (val: number) => {
+    let res = val.toString()
+    return res.length < 2 ? '0' + res : res
+  }
   $: {
-    seconds = pad(timer % 60);
-    minutes = pad(Math.floor(timer / 60));
+    seconds = pad(timer % 60)
+    minutes = pad(Math.floor(timer / 60))
   }
 </script>
 

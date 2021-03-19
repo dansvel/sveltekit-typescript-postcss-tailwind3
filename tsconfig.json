@@ -1,5 +1,6 @@
 {
 	"compilerOptions": {
+        "strict": true,
 		"moduleResolution": "node",
 		"target": "es2018",
 		/**
@@ -24,5 +25,5 @@
 			"$lib/*": ["src/lib/*"]
 		}
 	},
-	"include": ["src/**/*.js", "src/**/*.ts", "src/**/*.svelte"]
+	"include": ["src/**/*.ts", "src/**/*.svelte"]
 }

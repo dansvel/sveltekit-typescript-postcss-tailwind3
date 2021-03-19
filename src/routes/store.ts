@@ -1,3 +1,3 @@
-import { localStore } from './localStore';
+import { localStore } from './localStore'
 
-export const theme = localStore('theme', 'dark');
+export const theme = localStore('theme', 'dark')
