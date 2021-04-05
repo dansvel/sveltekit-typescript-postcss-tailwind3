@@ -9,23 +9,14 @@
   <!-- Primary Meta Tags -->
   <title>SvelteKit ❤️ Tailwind 2</title>
   <meta name="title" content="SvelteKit ❤️ Tailwind 2" />
-  <meta
-    name="description"
-    content="SvelteKit and Tailwind 2 toggle dark/light theme demo"
-  />
-  <meta
-    name="keywords"
-    content="Svelte, SvelteKit, Svelte-kit, Tailwind, HTML, CSS, JavaScript"
-  />
+  <meta name="description" content="SvelteKit and Tailwind 2 toggle dark/light theme demo" />
+  <meta name="keywords" content="Svelte, SvelteKit, Svelte-kit, Tailwind, HTML, CSS, JavaScript" />
   <meta name="author" content="@dansvel" />
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://metatags.io/" />
   <meta property="og:title" content="SvelteKit ❤️ Tailwind 2" />
-  <meta
-    property="og:description"
-    content="SvelteKit and Tailwind 2 toggle dark/light theme demo"
-  />
+  <meta property="og:description" content="SvelteKit and Tailwind 2 toggle dark/light theme demo" />
   <meta
     property="og:image"
     content="https://github.com/dansvel/sveltekit-typescript-postcss-tailwind2/raw/master/screenshot.png"
@@ -50,13 +41,12 @@
 <ToggleTheme />
 
 <blockquote class="text-xl p-2 bg-gray-200 dark:bg-gray-800 mb-2">
-  <a href="https://github.com/dansvel/sveltekit-typescript-postcss-tailwind2"
-    ><b>Github repo</b></a
-  >
-  or
-  <a href="https://dev.to/dansvel/sveltekit-svelte-next-with-tailwind-2-4dnn"
-    ><b>dev.to post</b></a
-  >
+  <strong></strong>SvelteKit beta**
+  ```
+  @sveltejs/kit 1.0.0.next-71
+  @sveltejs/adapter-static 1.0.0.next-4
+  ```
+  <a href="https://github.com/dansvel/sveltekit-typescript-postcss-tailwind2"><b>Github repo</b></a>
 </blockquote>
 <p>
   Visit the <a href="https://svelte.dev">svelte.dev</a> to learn how to build Svelte apps.
@@ -71,9 +61,12 @@
   p {
     @apply text-lg;
     @apply mt-0 mb-1;
-    & code {
+    code {
       @apply px-1;
-      @apply dark:bg-gray-800 bg-gray-200;
+      @apply bg-gray-200;
+      .dark & {
+        @apply bg-gray-800;
+      }
     }
   }
 </style>

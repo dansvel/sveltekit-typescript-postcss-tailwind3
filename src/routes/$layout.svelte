@@ -1,5 +1,5 @@
 <script lang="ts">
-  import './_global.postcss'
+  import '../global.postcss'
   import { theme } from './store'
   import { onMount } from 'svelte'
 

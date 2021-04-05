@@ -1,8 +1,15 @@
 ## SvelteKit (vite) with Tailwind
 
-## now version 0.0.2
 
-This boilerplate is fresh init from `svelte@next` at the time of writing, the versions I get are as follows
+## now version 0.0.3
+
+**SvelteKit beta**
+```
+@sveltejs/kit 1.0.0.next-71 
+@sveltejs/adapter-static 1.0.0.next-4
+```
+
+## version 0.0.2
 
 ```
 @sveltejs/kit 1.0.0.next-49
