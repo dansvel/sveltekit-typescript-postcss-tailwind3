@@ -8,6 +8,8 @@
   @sveltejs/kit 1.0.0.next-71 
   @sveltejs/adapter-static 1.0.0.next-4
   ```
+- using `@tailwindcss/jit`
+- replace `postcss-preset-env to postcss-nested` // fell free to replace it back
 - add transition
 
 ## version 0.0.2
