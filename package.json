@@ -11,14 +11,14 @@
 		"prelint": "npm run format",
 		"prepare": "husky install"
 	},
-    "lint-staged": {
-        "./src/**/*.{ts,svelte}": [
-            "npm run lint:fix"
-        ],
-        "./.{ts,cjs}": [
-            "npm run lint:fix"
-        ]
-    },
+	"lint-staged": {
+		"./src/**/*.{ts,svelte}": [
+			"npm run lint:fix"
+		],
+		"./.{ts,cjs}": [
+			"npm run lint:fix"
+		]
+	},
 	"devDependencies": {
 		"@sveltejs/adapter-static": "next",
 		"@sveltejs/kit": "next",

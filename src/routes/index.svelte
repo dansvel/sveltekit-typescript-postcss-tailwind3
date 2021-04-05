@@ -36,16 +36,17 @@
   />
 </svelte:head>
 
-<h1 class="text-5xl font-extrabold mb-4">Hello {$theme} world!</h1>
+<h1 class="text-5xl font-extrabold mb-2">Hello {$theme} world!</h1>
+<h2 class="text-3xl font-bold mb-4">Now using SvelteKit beta</h2>
+
+<pre>
+@sveltejs/kit 1.0.0.next-71
+@sveltejs/adapter-static 1.0.0.next-4
+</pre>
 
 <ToggleTheme />
 
-<blockquote class="text-xl p-2 bg-gray-200 dark:bg-gray-800 mb-2">
-  <strong></strong>SvelteKit beta**
-  ```
-  @sveltejs/kit 1.0.0.next-71
-  @sveltejs/adapter-static 1.0.0.next-4
-  ```
+<blockquote class="text-xl p-2 bg-gray-200 dark:bg-gray-800 mb-2 transition-colors duration-500">
   <a href="https://github.com/dansvel/sveltekit-typescript-postcss-tailwind2"><b>Github repo</b></a>
 </blockquote>
 <p>
@@ -54,19 +55,28 @@
 <p>The title is using utility class, but all other elements is using style component.</p>
 <p>Just check <code>src/routes/index.svelte</code> to see the code.</p>
 
-<Counter />
 <Timer />
+<Counter />
 
 <style lang="postcss">
   p {
     @apply text-lg;
     @apply mt-0 mb-1;
-    code {
-      @apply px-1;
-      @apply bg-gray-200;
-      .dark & {
-        @apply bg-gray-800;
-      }
+
+  }
+  code {
+    transition: background-color 0.5s, color 0.5s;
+    @apply px-1;
+    @apply bg-gray-200;
+    :global(.dark) & {
+      @apply bg-gray-800;
+    }
+  }
+  pre {
+    transition: background-color 0.5s, color 0.5s;
+    @apply text-left p-2 bg-gray-200;
+    :global(.dark) & {
+      @apply bg-gray-800;
     }
   }
 </style>

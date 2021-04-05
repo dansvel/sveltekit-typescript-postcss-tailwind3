@@ -3,11 +3,12 @@
 
 ## now version 0.0.3
 
-**SvelteKit beta**
-```
-@sveltejs/kit 1.0.0.next-71 
-@sveltejs/adapter-static 1.0.0.next-4
-```
+- **SvelteKit beta**
+  ```
+  @sveltejs/kit 1.0.0.next-71 
+  @sveltejs/adapter-static 1.0.0.next-4
+  ```
+- add transition
 
 ## version 0.0.2
 
