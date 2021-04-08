@@ -1,35 +1,20 @@
 module.exports = {
   root: true,
   parser: '@typescript-eslint/parser',
-  extends: [
-    'eslint:recommended',
-    'plugin:@typescript-eslint/recommended',
-    'plugin:@typescript-eslint/recommended-requiring-type-checking',
-    'prettier'
-  ],
+  extends: ['eslint:recommended', 'plugin:@typescript-eslint/recommended', 'prettier'],
   plugins: ['svelte3', '@typescript-eslint'],
   ignorePatterns: ['*.cjs'],
-  overrides: [
-    {
-      files: ['*.svelte'],
-      processor: 'svelte3/svelte3'
-    }
-  ],
+  overrides: [{ files: ['*.svelte'], processor: 'svelte3/svelte3' }],
   settings: {
-    'svelte3/typescript': require('typescript'),
-    // ignore style tags in Svelte because of Tailwind CSS
-    // See https://github.com/sveltejs/eslint-plugin-svelte3/issues/70
-    'svelte3/ignore-styles': () => true
+    'svelte3/typescript': require('typescript')
   },
   parserOptions: {
     sourceType: 'module',
-    ecmaVersion: 12,
-    project: ['./tsconfig.json'],
-    extraFileExtensions: ['.svelte']
+    ecmaVersion: 2019
   },
   env: {
     browser: true,
-    es2021: true,
+    es2017: true,
     node: true
   }
 }

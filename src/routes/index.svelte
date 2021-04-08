@@ -65,7 +65,7 @@
 
   }
   code {
-    transition: background-color 0.5s, color 0.5s;
+    @apply transition-colors duration-500;
     @apply px-1;
     @apply bg-gray-200;
     :global(.dark) & {
@@ -73,7 +73,7 @@
     }
   }
   pre {
-    transition: background-color 0.5s, color 0.5s;
+    @apply transition-colors duration-500;
     @apply text-left p-2 bg-gray-200;
     :global(.dark) & {
       @apply bg-gray-800;
