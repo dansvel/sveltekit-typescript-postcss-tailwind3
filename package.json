@@ -1,0 +1,37 @@
+{
+  "name": "sveltekit-typescript-postcss-tailwind2",
+  "version": "0.0.4",
+  "scripts": {
+    "dev": "svelte-kit dev",
+    "build": "svelte-kit build",
+    "preview": "svelte-kit preview",
+    "check": "svelte-check --tsconfig ./tsconfig.json",
+    "check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
+    "format": "prettier --write ./src/**/*.{svelte,ts,js} ./*.{ts,js}",
+    "lint": "eslint ./src/**/*.{svelte,ts,js} --ignore-path .gitignore .",
+    "lint:fix": "eslint --fix ./src/**/*.{svelte,ts,js} --ignore-path .gitignore ."
+  },
+  "devDependencies": {
+    "@sveltejs/adapter-static": "next",
+    "@sveltejs/kit": "next",
+    "@typescript-eslint/eslint-plugin": "^4.19.0",
+    "@typescript-eslint/parser": "^4.19.0",
+    "autoprefixer": "^10.2.6",
+    "cssnano": "^5.0.5",
+    "eslint": "^7.22.0",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-svelte3": "^3.2.0",
+    "postcss": "^8.3.0",
+    "postcss-load-config": "^3.0.1",
+    "postcss-nested": "^5.0.5",
+    "prettier": "~2.2.1",
+    "prettier-plugin-svelte": "^2.2.0",
+    "svelte": "^3.34.0",
+    "svelte-check": "^2.0.0",
+    "svelte-preprocess": "^4.0.0",
+    "tailwindcss": "^2.1.2",
+    "tslib": "^2.0.0",
+    "typescript": "^4.0.0"
+  },
+  "type": "module"
+}

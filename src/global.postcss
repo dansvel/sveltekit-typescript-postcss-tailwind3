@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* purge start ignore */
+body {
+  @apply transition-colors duration-500;
+  @apply antialiased text-gray-600 dark:text-gray-300 bg-gray-100 dark:bg-gray-900;
+  @apply leading-normal tracking-normal text-base font-normal break-words;
+  @apply font-sans text-base lg:text-xl;
+  main {
+    @apply p-8 pt-32 md:pt-24 mx-auto max-w-4xl;
+    @apply text-center;
+  }
+  a {
+    @apply text-green-600 dark:text-green-400;
+    @apply no-underline hover:underline focus:outline-none focus:underline;
+  }
+  button {
+    @apply py-1 px-4 my-2 rounded border border-gray-500;
+    @apply cursor-pointer focus:outline-none;
+  }
+}
+
+
+
+
+/* purge end ignore */
