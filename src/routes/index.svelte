@@ -19,7 +19,7 @@
   <meta property="og:description" content="SvelteKit and Tailwind 2 toggle dark/light theme demo" />
   <meta
     property="og:image"
-    content="https://sveltekit-tailwind2.netlify.app//screenshot.png"
+    content="https://sveltekit-tailwind2.netlify.app/screenshot.png"
   />
 
   <!-- Twitter -->
@@ -32,7 +32,7 @@
   />
   <meta
     property="twitter:image"
-    content="https://sveltekit-tailwind2.netlify.app//screenshot.png"
+    content="https://sveltekit-tailwind2.netlify.app/screenshot.png"
   />
 </svelte:head>
 
