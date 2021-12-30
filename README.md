@@ -2,6 +2,11 @@
 
 ## Changelog
 
+### Now version 0.1.0
+
+- Upgraded to the latest deps including Tailwind 3
+- fixed configurations
+
 ### Now version 0.0.4
 Looks like this will be the last beta version, hope the stable version will be released soon.
 

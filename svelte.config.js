@@ -5,9 +5,6 @@ import ssr from '@sveltejs/adapter-static'
 export default {
   preprocess: [
     preprocess({
-      defaults: {
-        style: 'postcss'
-      },
       postcss: true
     })
   ],
