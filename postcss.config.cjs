@@ -1,4 +1,5 @@
-const postcssNested = require('postcss-nested')
+//const postcssNested = require('postcss-nested')
+const tailwindcssNesting = require('tailwindcss/nesting')
 const tailwindcss = require('tailwindcss')
 const autoprefixer = require('autoprefixer')
 const cssnano = require('cssnano')
@@ -8,7 +9,7 @@ const dev = mode === 'development'
 
 module.exports = {
   plugins: [
-    postcssNested,
+    tailwindcssNesting,
     tailwindcss,
     autoprefixer,
     !dev &&
